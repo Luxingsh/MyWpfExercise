@@ -10,19 +10,25 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 using System.Windows.Navigation;
+using System.Windows.Shapes;
 
 namespace WpfApp1
 {
     /// <summary>
-    /// Window1.xaml 的交互逻辑
+    /// ExpenseItHome.xaml 的交互逻辑
     /// </summary>
-    public partial class Window1 : NavigationWindow
+    public partial class ExpenseItHome : Page
     {
-        public Window1()
+        public ExpenseItHome()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            ExpenseReportPage expenseReportPage = new ExpenseReportPage(this.peopleListBox.SelectedItem);
+            this.NavigationService.Navigate(expenseReportPage);
         }
     }
 }

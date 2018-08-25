@@ -10,19 +10,25 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 using System.Windows.Navigation;
+using System.Windows.Shapes;
 
 namespace WpfApp1
 {
     /// <summary>
-    /// Window1.xaml 的交互逻辑
+    /// ExpenseReportPage.xaml 的交互逻辑
     /// </summary>
-    public partial class Window1 : NavigationWindow
+    public partial class ExpenseReportPage : Page
     {
-        public Window1()
+        public ExpenseReportPage()
         {
             InitializeComponent();
         }
+        public ExpenseReportPage(object data) : this()
+        {
+            // Bind to expense report data.
+            this.DataContext = data;
+        }
+
     }
 }
