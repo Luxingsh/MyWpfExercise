@@ -10,7 +10,11 @@ namespace WpfApp2
     class Person
     {
        public string personName = "N.A";
-       public string PersonName
+        public string firstName = "N.A";
+        public string lastName = "N.A";
+        public string homeTown = "N.A";
+
+        public string PersonName
         {
             get
             {
@@ -19,6 +23,42 @@ namespace WpfApp2
             set
             {
                 personName = value;
+            }
+        }
+
+        public string FirstName
+        {
+            get
+            {
+                return firstName;
+            }
+            set
+            {
+                firstName = value;
+            }
+        }
+
+        public string LastName
+        {
+            get
+            {
+                return lastName;
+            }
+            set
+            {
+                lastName = value;
+            }
+        }
+
+        public string HomeTown
+        {
+            get
+            {
+                return homeTown;
+            }
+            set
+            {
+                homeTown = value;
             }
         }
     }
