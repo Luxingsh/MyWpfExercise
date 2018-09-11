@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2003
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp1", "WpfApp1\WpfApp1.csproj", "{E50F82E9-336D-4D0D-B969-39A5738DCDA3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicrosoftWpf", "WpfApp1\MicrosoftWpf.csproj", "{E50F82E9-336D-4D0D-B969-39A5738DCDA3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp2", "WpfApp2\WpfApp2.csproj", "{69A694AC-D009-4557-98F0-950AAB03D136}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfBinding", "WpfApp2\WpfBinding.csproj", "{69A694AC-D009-4557-98F0-950AAB03D136}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp3_DataContext", "WpfApp3_DataContext\WpfApp3_DataContext.csproj", "{ACAC307D-0F85-4604-A118-D5D633843C58}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataContext", "WpfApp3_DataContext\DataContext.csproj", "{ACAC307D-0F85-4604-A118-D5D633843C58}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfTest", "WpfTest\WpfTest.csproj", "{BF9301AB-0B3C-4325-BEB8-6ED2C9E78AB6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfBrowse", "WpfTest\WpfBrowse.csproj", "{BF9301AB-0B3C-4325-BEB8-6ED2C9E78AB6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvokeTest", "InvokeTest\InvokeTest.csproj", "{064819F0-1BAD-4FE9-95A3-62408FF145F0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CanvasWpf", "CanvasWpf\CanvasWpf.csproj", "{03E4C904-C7F2-485D-8E34-2D30FF8811B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Layout", "Layout\Layout.csproj", "{67238680-C219-4828-93DE-84F6DCAB0EAA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{03E4C904-C7F2-485D-8E34-2D30FF8811B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{03E4C904-C7F2-485D-8E34-2D30FF8811B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{03E4C904-C7F2-485D-8E34-2D30FF8811B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67238680-C219-4828-93DE-84F6DCAB0EAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67238680-C219-4828-93DE-84F6DCAB0EAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67238680-C219-4828-93DE-84F6DCAB0EAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67238680-C219-4828-93DE-84F6DCAB0EAA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

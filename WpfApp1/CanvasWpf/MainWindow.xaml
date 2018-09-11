@@ -1,16 +1,57 @@
-﻿<Window x:Class="CanvasWpf.MainWindow"
+﻿<Window x:Class="WpfApp1.WindowInherited"
+
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:CanvasWpf"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+
+        Title="WindowInherited" Height="400" Width="500" Loaded="Window_Loaded" >
+
     <Grid>
-        <Canvas>
 
-            <Button Name="btnByCode" Click="btnByCode_Click">后台代码实现</Button>
+        <Grid.RowDefinitions>
 
-        </Canvas>
+            <RowDefinition Height="101*"/>
+
+            <RowDefinition Height="80"/>
+
+            <RowDefinition Height="80"/>
+
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" >
+
+            <Label Content="继承自Window的FontSize" />
+
+            <TextBlock Name="textBlockInherited" Text="重写了继承，没有继承Window的FontSize"
+
+               FontSize="36" TextWrapping="WrapWithOverflow"/>
+
+            <StatusBar>没有继承自Window的FontSize，Statusbar</StatusBar>
+
+        </StackPanel>
+
+        <WrapPanel Grid.Row="1">
+
+            <Label Content="窗体字体大小" />
+
+            <ComboBox Name="drpWinFontSize"></ComboBox>
+
+            <Button Name="btnFontSize" Click="btnFontSize_Click">改变window字体</Button>
+
+
+
+        </WrapPanel>
+
+        <WrapPanel Grid.Row="2">
+
+            <Label Content="文本字体大小" />
+
+            <ComboBox Name="drpTxtFontSize"></ComboBox>
+
+            <Button Name="btnTextBlock" Click="btnTextBlock_Click">改变TextBlock字体</Button>
+
+        </WrapPanel>
+
     </Grid>
+
 </Window>
